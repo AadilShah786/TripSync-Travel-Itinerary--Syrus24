@@ -55,26 +55,26 @@ function Banner() {
   };
   if (loading) {
     return (
-    
+
       <div className="h-screen bg-white">
-<div className="flex justify-center items-center h-full">
-  <img className="h-16 w-16" src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif" alt=""/>
-</div>
-</div>
+        <div className="flex justify-center items-center h-full">
+          <img className="h-16 w-16" src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif" alt="" />
+        </div>
+      </div>
     );
   }
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative w-full h-full">
       <div
-        className="flex transition ease-out duration-300"
+        className="flex transition ease-out duration-300 w-screen h-screen"
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}
       >
-        {slides.map((slide, index) => (
-          <img key={index} src={slide} alt={`slide-${index}`} className="w-screen" />
-        ))}
+        {/* {slides.map((slide, index) => ( */}
+          <img key={9} src={slides[0]} alt={`slide-${9}`} className="w-full object-cover" />
+        {/* ))} */}
       </div>
 
       <div className="absolute top-0 h-full w-full flex justify-between items-center px-5">

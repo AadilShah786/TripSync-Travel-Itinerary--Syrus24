@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Banner from "./Banner";
 function Introduction() {
   return (
-    <div>
-      <section className="bg-white">
-        <div className="mx-auto max-w-screen-xl lg:flex lg:h-96 lg:items-center">
-          <div className="mx-auto max-w-xl text-center">
+    <div className="relative flex justify-center ">
+            <section className="">
+      <Banner />
+
+      </section>
+      <section className="absolute ">
+        <div className="mx-auto max-w-screen-xl lg:flex lg:h-96 lg:items-center" >
+          <div className="mx-auto max-w-xl text-center p-5"  style={{backgroundColor:"rgba(255,255,255,0.66)",borderRadius:"30px"}}>
             <h1 className="text-3xl font-extrabold sm:text-5xl text-black">
               Where will your
               <strong className="font-extrabold text-red-700 sm:block">
@@ -36,6 +40,8 @@ function Introduction() {
           </div>
         </div>
       </section>
+
+
     </div>
   );
 }

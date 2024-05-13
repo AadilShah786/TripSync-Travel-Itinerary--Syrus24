@@ -14,7 +14,6 @@ function HomePage() {
       {/* <img src="    https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500" loading="lazy" alt="Photo by Fakurian Design" className="absolute inset-0 h-full w-full object-cover object-center" /> */}
       {/* <!-- image - end --> */}
       <Introduction />
-      <Banner />
       {/* <!-- overlay - start --> */}
       {/* <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply"></div> */}
       {/* <!-- overlay - end --> */}
